@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Animake!</string>
+    <string name="app_name">Animake</string>
+    <string name="draw">Draw</string>
+    <string name="move">Move</string>
+    <string name="scale">Scale</string>
+    <string name="rotate">Rotate</string>
+    <string name="origins">Origins</string>
+    <string name="frames">Frames</string>
+    <string name="sphere">sphere</string>
+    <string name="torus">torus</string>
+    <string name="box">box</string>
+    <string name="x">x</string>
+    <string name="y">y</string>
+    <string name="z">z</string>
+    <string name="all">all</string>
+
+</resources>

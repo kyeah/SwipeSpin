@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_draw"
+        android:showAsAction="always"
+        android:title="@+string/draw">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_sphere"
+                android:title="@+string/sphere"/>
+
+            <item
+                android:id="@+id/menu_torus"
+                android:title="@+string/torus"/>
+
+            <item
+                android:id="@+id/menu_box"
+                android:title="@+string/box"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_move"
+        android:showAsAction="always"
+        android:title="@+string/move">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_move_x"
+                android:title="@+string/x"/>
+
+            <item
+                android:id="@+id/menu_move_y"
+                android:title="@+string/y"/>
+
+            <item
+                android:id="@+id/menu_move_z"
+                android:title="@+string/z"/>
+
+            <item
+                android:id="@+id/menu_move_all"
+                android:title="@+string/all"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_scale"
+        android:showAsAction="always"
+        android:title="@+string/scale">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_scale_x"
+                android:title="@+string/x"/>
+
+            <item
+                android:id="@+id/menu_scale_y"
+                android:title="@+string/y"/>
+
+            <item
+                android:id="@+id/menu_scale_z"
+                android:title="@+string/z"/>
+
+            <item
+                android:id="@+id/menu_scale_all"
+                android:title="@+string/all"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_rotate"
+        android:showAsAction="always"
+        android:title="@+string/rotate">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_rotate_x"
+                android:title="@+string/x"/>
+
+            <item
+                android:id="@+id/menu_rotate_y"
+                android:title="@+string/y"/>
+
+            <item
+                android:id="@+id/menu_rotate_z"
+                android:title="@+string/z"/>
+
+            <item
+                android:id="@+id/menu_rotate_all"
+                android:title="@+string/all"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_frames"
+        android:showAsAction="always"
+        android:title="@+string/frames"/>
+
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="file_new" type="id"/>
+    <item name="file_open" type="id"/>
+    <item name="file_save" type="id"/>
+    <item name="tt_points" type="id"/>
+    <item name="tt_origin" type="id"/>
+    <item name="tt_both" type="id"/>
+    <item name="shade_wireframe" type="id"/>
+    <item name="shade_disco" type="id"/>
+    <item name="shade_flat" type="id"/>
+    <item name="shade_gouraud" type="id"/>
+    <item name="shade_phong" type="id"/>
+    <item name="input_freehand" type="id"/>
+    <item name="input_by_value" type="id"/>
+
+</resources>
