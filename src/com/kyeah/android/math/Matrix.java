@@ -1,8 +1,9 @@
 package com.kyeah.android.math;
+
 /*========== Matrix.java ==========
-Matrix will hold a 2-d array of doubles and have a default size of 4x4.
+Matrix holds a 2-d array of doubles and has a default size of 4x4.
 Handles basic matrix maintenence and math.
-Creates transformation matricies for tralation, scale and rotate
+Creates transformation matricies for translation, scale and rotate.
 =========================*/
 
 import com.kyeah.android.animake.R;
@@ -34,9 +35,6 @@ public class Matrix {
     triangle points[i], points[i+1], points[i+2] and a 
     view vector (use <0, 0, -1> to start.      
 
-
-    04/17/12 17:10:13
-    jonalf
     ====================*/
   public double calculateDot( int i, double[] view, int interp ) {
 	
@@ -87,18 +85,16 @@ public class Matrix {
   }
 
   /*========     public double[] calculateNormal() ==========
-    Inputs:   double ax
-              double ay
+    Inputs:     double ax
+                double ay
 		double az
 		double bx
 		double by
 		double bz  
-    Returns:  A double arry of size 3 representing the 
+    Returns:  A double array of size 3 representing the 
               cross product of <ax, ay, az> and <bx, by, bz>
-    
-    04/17/12 17:07:07
-    jonalf
-    ====================*/
+              
+  ====================*/
   public double[] calculateNormal( int i ){
 
 	double ax, ay, az, bx, by, bz;
@@ -425,9 +421,7 @@ public class Matrix {
     
     Turn the calling matrix into a hermite coeficient
     generating matrix
-
-    03/09/12 18:15:58
-    jonalf
+    
     ====================*/
   public void makeHermite() {
 	
@@ -488,8 +482,6 @@ public class Matrix {
     coefiecients required to generate a Hermite curve given 
     the values of the 4 parameter coordinates.
 
-    03/09/12 18:17:16
-    jonalf
     ====================*/
   public void generateHermiteCoefs(double p1, double p2, 
 				     double p3, double p4) {
@@ -515,9 +507,7 @@ public class Matrix {
     Turns the calling matrix into a matrix that provides the 
     coefiecients required to generate a Bezier curve given 
     the values of the 4 parameter coordinates.
-
-    03/09/12 18:17:16
-    jonalf
+    
     ====================*/
   public void generateBezierCoefs(double p1, double p2, 
 				    double p3, double p4) {
