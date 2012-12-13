@@ -26,8 +26,6 @@ public class EdgeMatrix extends Matrix {
       should call generateSphere to create the
       necessary points
 
-      04/16/12 21:50:18
-      jdyrlandweaver
       ====================*/
     public void addSphere( double cx, double cy, double cz, double r ) { 
 
@@ -132,10 +130,8 @@ public class EdgeMatrix extends Matrix {
       torus with center (cx, cy) and radii r1 and r2.
       
       should call generateTorus to create the
-      necessary points
-
-      04/16/12 21:50:18
-      jdyrlandweaver
+      necessary points.
+      
       ====================*/
     public void addTorus( double cx, double cy, double cz, double r1, double r2 ) {
 
@@ -262,8 +258,6 @@ public class EdgeMatrix extends Matrix {
       rectangular prism with upper-left-front corner
       (x, y, z) and dimensions width, depth and height
 
-      04/16/12 21:50:18
-      jdyrlandweaver
       ====================*/
     public void addBox( double x, double y, double z, 
 			double width, double height, double depth ) {
@@ -359,9 +353,7 @@ public class EdgeMatrix extends Matrix {
       
       should call generateSphere to create the
       necessary points
-
-      03/28/12 18:12:48
-      jonalf
+      
       ====================*/
     public void addSphereMesh( double cx, double cy, double r ) {
 
@@ -462,8 +454,6 @@ public class EdgeMatrix extends Matrix {
       
       Adds these points to the matrix parameter
 
-      03/28/12 18:12:52
-      jonalf
       ====================*/
     public void generateSphere( double cx, double cy, double cz, double r, double step ) {
 	
@@ -496,8 +486,6 @@ public class EdgeMatrix extends Matrix {
       should call generateTorus to create the
       necessary points
 
-      03/28/12 18:12:57
-      jonalf
       ====================*/
     public void addTorusMesh( double cx, double cy, double r1, double r2 ) {
 	double step = 0.05;
@@ -592,9 +580,7 @@ public class EdgeMatrix extends Matrix {
       tarus with center (cx, cy) and radii r1 and r2
 
       Adds these points to the matrix parameter
-      
-      03/28/12 18:13:00
-      jonalf
+
       ====================*/
     public void generateTorus( double cx, double cy, double cz, double r1, double r2, double step ) {
 	double x, y, z;
@@ -634,9 +620,7 @@ public class EdgeMatrix extends Matrix {
       adds all the edges required to make a wire frame mesh
       for a rectagular prism whose upper-left corner is
       (x, y, z) with width, height and depth dimensions.
-      
-      03/28/12 18:13:03
-      jonalf
+
       ====================*/
     public void addBoxMesh( double x, double y, double z, double width, double height, double depth ) {
 
@@ -687,8 +671,6 @@ public class EdgeMatrix extends Matrix {
       double y1 
       Returns: The distance between (x0, y0) and (x1, y1)
 
-      03/09/12 17:57:57
-      jonalf
       ====================*/
     public static double distance(double x0, double y0, 
 				  double x1, double y1) {
@@ -707,8 +689,6 @@ public class EdgeMatrix extends Matrix {
 
       The circle is centered at (cx, cy) with radius r
 
-      03/14/12 08:57:38
-      jdyrlandweaver
       ====================*/
     public void addCircle(double cx, double cy, double r) {
 	
@@ -747,8 +727,6 @@ public class EdgeMatrix extends Matrix {
       Generates the edges required to create a curve
       and adds them to the edge matrix
 
-      03/09/12 18:00:06
-      jonalf
       ====================*/
     /*
     public void addCurve( double x0, double y0, 
