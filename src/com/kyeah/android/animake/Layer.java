@@ -70,21 +70,7 @@ public class Layer {
 				|| frame.interp == R.id.shade_gouraud
 				|| frame.interp == R.id.shade_phong) {
 
-			iDiffuse = pm
-					.calculateDiffuse(i, frame.lights.get(0), frame.interp); /* TODO:
-																			 * If
-																			 * multiple
-																			 * lights
-																			 * ,
-																			 * need
-																			 * to
-																			 * find
-																			 * max
-																			 * iDiffuse
-																			 * out
-																			 * of
-																			 * them
-																			 */
+			iDiffuse = pm.calculateDiffuse(i, frame.lights.get(0), frame.interp); // TODO: multiple lights , need to find max iDiffuse out of them
 
 			iSpec = pm.calculateSpecular(i, frame.lights.get(0), frame.view,
 					frame.interp);
@@ -175,17 +161,17 @@ public class Layer {
 								(int) pm.getZ(i + 2), shade0, shade1, shade2);
 
 						/*
-						 * Color redsss = new Color(255, 0, 0); drawLine(
+						 * Color red_poly = new Color(255, 0, 0); drawLine(
 						 * (int)pm.getX(i), (int)pm.getY(i), (int)pm.getZ(i),
 						 * (int)pm.getX(i+1), (int)pm.getY(i+1),
-						 * (int)pm.getZ(i+1), redsss, redsss); drawLine(
+						 * (int)pm.getZ(i+1), red_poly, red_poly); drawLine(
 						 * (int)pm.getX(i+1), (int)pm.getY(i+1),
 						 * (int)pm.getZ(i+1), (int)pm.getX(i+2),
-						 * (int)pm.getY(i+2), (int)pm.getZ(i+2), redsss,
-						 * redsss); drawLine( (int)pm.getX(i+2),
+						 * (int)pm.getY(i+2), (int)pm.getZ(i+2), red_poly,
+						 * red_poly); drawLine( (int)pm.getX(i+2),
 						 * (int)pm.getY(i+2), (int)pm.getZ(i+2),
 						 * (int)pm.getX(i), (int)pm.getY(i), (int)pm.getZ(i),
-						 * redsss, redsss);
+						 * red_poly, red_poly);
 						 */
 						continue;
 					}
