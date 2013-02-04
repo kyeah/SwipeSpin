@@ -180,7 +180,6 @@ public class Layer {
 							|| frame.interp == R.id.shade_disco) {
 						shade = calculateShade(pm, i, r, g, b);
 
-						// TODO: Fix this thing
 						if (frame.interp == R.id.shade_disco) {
 							r = Color.red(shade);
 							g = Color.green(shade);
