@@ -325,12 +325,9 @@ public class Frame extends SurfaceView implements OnTouchListener,
 		if(_touched) {
 			bitCanvas[PREVIEW].drawColor(0, PorterDuff.Mode.CLEAR);
 			previewLayer.drawPolygons(bitCanvas[PREVIEW]);
-		} /*else {-
-			bitCanvas[CURR].drawColor(0, PorterDuff.Mode.CLEAR);
-			//previewLayer.drawPolygons(bitCanvas[CURR]);
-		}*/
+		} 
 
-		bitCanvas[CURR].drawColor(0, PorterDuff.Mode.CLEAR);
+		//bitCanvas[CURR].drawColor(0, PorterDuff.Mode.CLEAR);
 		currentLayer.drawPolygons(bitCanvas[CURR]);
 		
 		// TODO: Move this so that it is done in the UI thread instead of the worker thread
