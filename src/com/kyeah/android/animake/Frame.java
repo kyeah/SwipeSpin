@@ -319,9 +319,6 @@ public class Frame extends SurfaceView implements OnTouchListener,
 		// TODO: if previewLayer is not being accessed by adding thread (thread is asleep (only woken by onMove for modifying the matrix))
 		//previewLayer.drawPolygons(bitCanvas);
 
-		// TODO: if touch down/move, draw previewlayer, else draw currentlayer (also move drawColor(clear) to before all drawPolygons (besides when drawing to bg canvas, where you will draw multiple layers)) 
-		// TODO: Separate bg, current, and preview layers into different clear canvases
-
 		if(_touched) {
 			bitCanvas[PREVIEW].drawColor(0, PorterDuff.Mode.CLEAR);
 			previewLayer.drawPolygons(bitCanvas[PREVIEW]);
