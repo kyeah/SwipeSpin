@@ -265,12 +265,7 @@ public class Frame extends SurfaceView implements OnTouchListener,
 				currentLayer.append(previewLayer.getEdgeMat(), currentColor);
 				bitCanvas[PREVIEW].drawColor(0, PorterDuff.Mode.CLEAR);
 				break;
-			/*
-			 * double r = EdgeMatrix.distance(previewLayer.getX(0),
-			 * previewLayer.getY(0), x, y);
-			 * currentLayer.addSphere(previewLayer.getX(0),
-			 * previewLayer.getY(0), currentLayer.getZ(), r, currentColor);
-			 */
+
 			case R.id.menu_torus:
 
 				break;
@@ -293,8 +288,6 @@ public class Frame extends SurfaceView implements OnTouchListener,
 			}
 
 			previewLayer.clear();
-			// currentLayer.addSphere((double)event.getX(),
-			// (double)event.getY(), 0.0, 75.0, currentColor);
 			break;
 		default:
 			return false;
